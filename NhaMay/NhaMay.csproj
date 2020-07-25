@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CFD538C-1E71-40EC-895D-31CD0AD3B2FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NhaMay</RootNamespace>
+    <AssemblyName>NhaMay</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frm_CaiDatHeThong\frm_CaiDatThongTinTram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CaiDatHeThong\frm_CaiDatThongTinTram.Designer.cs">
+      <DependentUpon>frm_CaiDatThongTinTram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CaiDatHeThong\frm_DayTruyenDaDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CaiDatHeThong\frm_DayTruyenDaDangKy.Designer.cs">
+      <DependentUpon>frm_DayTruyenDaDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DuLieuCoBan\frm_CongDoanCoBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DuLieuCoBan\frm_CongDoanCoBan.Designer.cs">
+      <DependentUpon>frm_CongDoanCoBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DuLieuCoBan\frm_DuLieuNhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DuLieuCoBan\frm_DuLieuNhanSu.Designer.cs">
+      <DependentUpon>frm_DuLieuNhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DuLieuCoBan\frm_ToSanXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DuLieuCoBan\frm_ToSanXuat.Designer.cs">
+      <DependentUpon>frm_ToSanXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_CaiDatHeThong\frm_CaiDatThongTinTram.resx">
+      <DependentUpon>frm_CaiDatThongTinTram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CaiDatHeThong\frm_DayTruyenDaDangKy.resx">
+      <DependentUpon>frm_DayTruyenDaDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DuLieuCoBan\frm_CongDoanCoBan.resx">
+      <DependentUpon>frm_CongDoanCoBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DuLieuCoBan\frm_DuLieuNhanSu.resx">
+      <DependentUpon>frm_DuLieuNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DuLieuCoBan\frm_ToSanXuat.resx">
+      <DependentUpon>frm_ToSanXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-close-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-repeat-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-property-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-ticket-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-opened-folder-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-server-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-print-48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
